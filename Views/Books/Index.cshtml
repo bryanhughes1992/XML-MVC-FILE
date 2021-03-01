@@ -1,0 +1,22 @@
+﻿@model IEnumerable<_5204_BRYANHUGHES_LAB05.Models.Book>
+<h1>Books</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.LastName, @book.AuthorTitle @book.FirstName @book.MiddleName</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿@model _5204_BRYANHUGHES_LAB05.Models.Book;
+<h1>Add a Book</h1>
+<form asp-action="Create">
+    <fieldset>
+        <label asp-for="Title">Book Title</label>
+        <input asp-for="Title" required />
+        <label asp-for="AuthorTitle">Author Title</label>
+        <input asp-for="AuthorTitle" />
+        <label asp-for="FirstName">Author First Name</label>
+        <input asp-for="FirstName" required />
+        <label asp-for="MiddleName">Author Middle Name</label>
+        <input asp-for="MiddleName" />
+        <label asp-for="LastName">Author Last Name</label>
+        <input asp-for="LastName" required/>
+        <input value="Submit!" type="submit" />
+    </fieldset>
+</form>
